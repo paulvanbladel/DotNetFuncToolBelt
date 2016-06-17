@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Enumeration.cs" />
-    <Compile Include="ErrorType.cs" />
+    <Compile Include="ErrorTypebase.cs" />
     <Compile Include="Guard.cs" />
     <Compile Include="HashCodeUtils.cs" />
     <Compile Include="Result.cs" />

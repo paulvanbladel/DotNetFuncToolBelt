@@ -3,7 +3,6 @@ using System;
 
 namespace AvoidExceptionsAndNulls
 {
-
     public class PaymentGateway
     {
         public Result Pay(DateTime date, string customerName)

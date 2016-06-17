@@ -19,7 +19,7 @@ namespace UnitTests
         {
             Result result = new PaymentGateway().Pay(DateTime.Now, "xpaulus");
             Assert.Equal(false, result.IsSuccess);
-            Assert.Equal(ErrorType.NoXinNameAllowed, result.ErrorType);
+            Assert.Equal(ErrorType.NoXinNameAllowed.Value, result.ErrorType.Value);
         }
     }
 }

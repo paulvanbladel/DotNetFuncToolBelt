@@ -5,10 +5,10 @@ namespace DotNetFuncToolBelt
     public class Result
     {
         public bool IsSuccess { get; }
-        public ErrorType? ErrorType { get; }
+        public ErrorTypebase ErrorType { get; }
         public bool IsFailure => !IsSuccess;
 
-        protected Result(bool isSuccess, ErrorType? errorType)
+        protected Result(bool isSuccess, ErrorTypebase errorType)
         {
             if (isSuccess && errorType != null)
                 throw new InvalidOperationException();
@@ -24,12 +24,12 @@ namespace DotNetFuncToolBelt
             throw new NotImplementedException();
         }
 
-        public static Result Fail(ErrorType? errorType)
+        public static Result Fail(ErrorTypebase errorType)
         {
             return new Result(false, errorType);
         }
 
-        public static Result<T> Fail<T>(ErrorType? errorType)
+        public static Result<T> Fail<T>(ErrorTypebase errorType)
         {
             return new Result<T>(default(T), false, errorType);
         }
@@ -60,7 +60,7 @@ namespace DotNetFuncToolBelt
             }
         }
 
-        protected internal Result(T value, bool isSuccess, ErrorType? errorType)
+        protected internal Result(T value, bool isSuccess, ErrorTypebase errorType)
             : base(isSuccess, errorType)
         {
             _value = value;
