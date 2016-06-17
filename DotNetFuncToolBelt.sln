@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFuncToolBelt", "DotNetFuncToolBelt.csproj", "{B2F748C0-720D-4EB4-86F6-EFDDD9083F93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFuncToolBelt", "src\DotNetFuncToolBelt\DotNetFuncToolBelt.csproj", "{B2F748C0-720D-4EB4-86F6-EFDDD9083F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvoidExceptionsAndNulls", "samples\AvoidExceptionsAndNulls\AvoidExceptionsAndNulls.csproj", "{C265F828-2AA9-4078-8816-3E2D0594DB4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B2F748C0-720D-4EB4-86F6-EFDDD9083F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2F748C0-720D-4EB4-86F6-EFDDD9083F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2F748C0-720D-4EB4-86F6-EFDDD9083F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C265F828-2AA9-4078-8816-3E2D0594DB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C265F828-2AA9-4078-8816-3E2D0594DB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C265F828-2AA9-4078-8816-3E2D0594DB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C265F828-2AA9-4078-8816-3E2D0594DB4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
