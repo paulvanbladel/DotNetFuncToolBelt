@@ -19,6 +19,11 @@ namespace DotNetFuncToolBelt
             ErrorType = errorType;
         }
 
+        public static Result Fail(object someError)
+        {
+            throw new NotImplementedException();
+        }
+
         public static Result Fail(ErrorType? errorType)
         {
             return new Result(false, errorType);
@@ -63,10 +68,5 @@ namespace DotNetFuncToolBelt
     }
 
 
-    public enum ErrorType
-    {
-        DatabaseIsOffline,
-        CustomerAlreadyExists
-        // More stuff here...
-    }
+   
 }

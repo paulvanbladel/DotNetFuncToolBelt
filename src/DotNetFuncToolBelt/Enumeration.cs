@@ -16,30 +16,7 @@ namespace DotNetFuncToolBelt
     /// The enumeration is made by providing a displayname and unique value to indicate its internal value,
     /// but it doesn't prevent you from adding more properties to the class you'd like to be an enumeration.
     /// 
-    /// <![CDATA[
-    /// 
-    /// Implement example:
-    /// 
-    /// public class MyEnumClass : Enumeration
-    /// {
-    ///     public static readonly MyEnumClass MY_FIRST_ENUM = new MyEnumClass("first displayname", 1, "some addition value");
-    ///     public static readonly MyEnumClass MY_SECOND_ENUM = new MyEnumClass("second displayname", 2, "some addition value");
-    ///     
-    ///     private MyEnumClass(string displayName, string value, string myAdditionalValue)
-    ///         :base(displayName, value)
-    ///     {
-    ///         this.MyAdditionalValue = myAdditionValue;
-    ///     }
-    ///     
-    ///     public string MyAdditionalValue { get; set; }
-    ///
-    /// }
-    /// 
-    /// 
-    /// Usage example:
-    /// 
-    ///     var theValue = MyEnumClass.MY_FIRST_ENUM;
-    /// 
+   
     /// IMPORTANT: 
     ///     - Make the constructor private. Only the enumeration itself should be able to make itself.
     ///     - Mark your "enumerations" as static readonly so they're only instantiated once and cannot be modified.
